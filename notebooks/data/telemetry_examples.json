@@ -1,0 +1,596 @@
+[
+  {
+    "id": "ex01",
+    "difficulty": "easy",
+    "scenario": "United departure climbing east-southeast out of SFO",
+    "raw_input": {
+      "icao24": "a8c1f2",
+      "startTime": 1713300000,
+      "endTime": 1713300360,
+      "callsign": "UAL245 ",
+      "path": [
+        [
+          1713300000,
+          37.6188,
+          -122.3754,
+          250.0,
+          102.0,
+          false
+        ],
+        [
+          1713300120,
+          37.6205,
+          -122.3,
+          850.0,
+          105.0,
+          false
+        ],
+        [
+          1713300240,
+          37.622,
+          -122.22,
+          1550.0,
+          108.0,
+          false
+        ],
+        [
+          1713300360,
+          37.624,
+          -122.13,
+          2450.0,
+          112.0,
+          false
+        ]
+      ],
+      "derived_metadata": {
+        "alert": "climb",
+        "notes": "steady eastbound departure from SFO"
+      }
+    },
+    "gold_summary": "UAL245 is climbing steadily after departure from SFO while tracking generally east-southeast.",
+    "gold_facts": [
+      "aircraft is airborne",
+      "altitude increases steadily",
+      "heading remains generally east-southeast",
+      "trajectory is consistent with departure",
+      "no ground contact"
+    ]
+  },
+  {
+    "id": "ex02",
+    "difficulty": "easy",
+    "scenario": "American arrival descending south toward SFO",
+    "raw_input": {
+      "icao24": "ab12cd",
+      "startTime": 1713301000,
+      "endTime": 1713301360,
+      "callsign": "AAL187 ",
+      "path": [
+        [
+          1713301000,
+          37.78,
+          -122.36,
+          3100.0,
+          185.0,
+          false
+        ],
+        [
+          1713301120,
+          37.73,
+          -122.355,
+          2400.0,
+          184.0,
+          false
+        ],
+        [
+          1713301240,
+          37.68,
+          -122.352,
+          1500.0,
+          183.0,
+          false
+        ],
+        [
+          1713301360,
+          37.632,
+          -122.35,
+          700.0,
+          182.0,
+          false
+        ]
+      ],
+      "derived_metadata": {
+        "alert": "rapid_descent",
+        "notes": "southbound arrival consistent with SFO approach flow"
+      }
+    },
+    "gold_summary": "AAL187 is descending rapidly on a southbound approach toward SFO.",
+    "gold_facts": [
+      "aircraft is airborne",
+      "altitude decreases rapidly",
+      "heading remains nearly south",
+      "trajectory is consistent with arrival",
+      "rapid descent alert is present"
+    ]
+  },
+  {
+    "id": "ex03",
+    "difficulty": "easy",
+    "scenario": "Delta cruise segment eastbound over central California",
+    "raw_input": {
+      "icao24": "c3d4e5",
+      "startTime": 1713302000,
+      "endTime": 1713302360,
+      "callsign": "DAL412 ",
+      "path": [
+        [
+          1713302000,
+          36.8,
+          -121.9,
+          10850.0,
+          91.0,
+          false
+        ],
+        [
+          1713302120,
+          36.801,
+          -121.79,
+          10860.0,
+          92.0,
+          false
+        ],
+        [
+          1713302240,
+          36.8015,
+          -121.68,
+          10840.0,
+          90.0,
+          false
+        ],
+        [
+          1713302360,
+          36.802,
+          -121.57,
+          10855.0,
+          93.0,
+          false
+        ]
+      ],
+      "derived_metadata": {
+        "alert": "level_flight",
+        "notes": "stable eastbound cruise"
+      }
+    },
+    "gold_summary": "DAL412 remains in near-level cruise while continuing eastbound with minimal heading change.",
+    "gold_facts": [
+      "aircraft is airborne",
+      "altitude stays nearly constant",
+      "heading remains close to east",
+      "trajectory is stable",
+      "level flight alert is present"
+    ]
+  },
+  {
+    "id": "ex04",
+    "difficulty": "medium",
+    "scenario": "Southwest aircraft descending while turning right toward OAK approach corridor",
+    "raw_input": {
+      "icao24": "d6e7f8",
+      "startTime": 1713303000,
+      "endTime": 1713303360,
+      "callsign": "SWA882 ",
+      "path": [
+        [
+          1713303000,
+          37.91,
+          -122.58,
+          3900.0,
+          105.0,
+          false
+        ],
+        [
+          1713303120,
+          37.885,
+          -122.51,
+          3200.0,
+          128.0,
+          false
+        ],
+        [
+          1713303240,
+          37.845,
+          -122.455,
+          2400.0,
+          152.0,
+          false
+        ],
+        [
+          1713303360,
+          37.8,
+          -122.42,
+          1650.0,
+          172.0,
+          false
+        ]
+      ],
+      "derived_metadata": {
+        "alert": "descending_turn",
+        "notes": "descent with pronounced right turn toward East Bay"
+      }
+    },
+    "gold_summary": "SWA882 is descending while making a strong right turn, shifting from an easterly heading toward nearly southbound flight.",
+    "gold_facts": [
+      "aircraft is airborne",
+      "altitude decreases steadily",
+      "heading turns right significantly",
+      "final heading is near south",
+      "descent and turn occur together"
+    ]
+  },
+  {
+    "id": "ex05",
+    "difficulty": "medium",
+    "scenario": "Alaska departure climbing and turning left out of SJC",
+    "raw_input": {
+      "icao24": "e9f0a1",
+      "startTime": 1713304000,
+      "endTime": 1713304360,
+      "callsign": "ASA671 ",
+      "path": [
+        [
+          1713304000,
+          37.3639,
+          -121.9289,
+          280.0,
+          330.0,
+          false
+        ],
+        [
+          1713304120,
+          37.42,
+          -121.965,
+          900.0,
+          312.0,
+          false
+        ],
+        [
+          1713304240,
+          37.49,
+          -122.01,
+          1650.0,
+          292.0,
+          false
+        ],
+        [
+          1713304360,
+          37.565,
+          -122.07,
+          2550.0,
+          275.0,
+          false
+        ]
+      ],
+      "derived_metadata": {
+        "alert": "climbing_turn",
+        "notes": "departure climb with left turn from SJC toward the peninsula"
+      }
+    },
+    "gold_summary": "ASA671 is climbing after departure from SJC while turning left from a northwest heading toward a more westerly track.",
+    "gold_facts": [
+      "aircraft is airborne",
+      "altitude increases steadily",
+      "heading turns left",
+      "climb and turn occur simultaneously",
+      "trajectory is consistent with departure"
+    ]
+  },
+  {
+    "id": "ex06",
+    "difficulty": "hard",
+    "scenario": "JetBlue aircraft in holding-pattern-like maneuver west of SFO",
+    "raw_input": {
+      "icao24": "f2a3b4",
+      "startTime": 1713305000,
+      "endTime": 1713305600,
+      "callsign": "JBU516 ",
+      "path": [
+        [
+          1713305000,
+          37.69,
+          -122.62,
+          3200.0,
+          45.0,
+          false
+        ],
+        [
+          1713305150,
+          37.735,
+          -122.575,
+          3190.0,
+          120.0,
+          false
+        ],
+        [
+          1713305300,
+          37.705,
+          -122.52,
+          3185.0,
+          205.0,
+          false
+        ],
+        [
+          1713305450,
+          37.655,
+          -122.555,
+          3175.0,
+          292.0,
+          false
+        ],
+        [
+          1713305600,
+          37.685,
+          -122.62,
+          3180.0,
+          18.0,
+          false
+        ]
+      ],
+      "derived_metadata": {
+        "alert": "holding_pattern",
+        "notes": "looping track with nearly constant altitude"
+      }
+    },
+    "gold_summary": "JBU516 appears to be in a holding pattern, circling west of SFO at nearly constant altitude.",
+    "gold_facts": [
+      "aircraft is airborne",
+      "altitude remains nearly constant",
+      "heading changes dramatically over the segment",
+      "trajectory loops back toward its starting area",
+      "holding pattern alert is present"
+    ]
+  },
+  {
+    "id": "ex07",
+    "difficulty": "medium",
+    "scenario": "Frontier final approach aligned toward SFO",
+    "raw_input": {
+      "icao24": "0a1b2c",
+      "startTime": 1713306000,
+      "endTime": 1713306360,
+      "callsign": "FFT302 ",
+      "path": [
+        [
+          1713306000,
+          37.735,
+          -122.355,
+          1900.0,
+          182.0,
+          false
+        ],
+        [
+          1713306120,
+          37.69,
+          -122.3535,
+          1350.0,
+          181.0,
+          false
+        ],
+        [
+          1713306240,
+          37.65,
+          -122.3525,
+          800.0,
+          181.0,
+          false
+        ],
+        [
+          1713306360,
+          37.615,
+          -122.3515,
+          280.0,
+          180.0,
+          false
+        ]
+      ],
+      "derived_metadata": {
+        "alert": "final_approach",
+        "notes": "stable approach with constant southerly alignment"
+      }
+    },
+    "gold_summary": "FFT302 is on a stable final approach, descending steadily while maintaining a nearly due-south alignment.",
+    "gold_facts": [
+      "aircraft is airborne",
+      "altitude decreases steadily",
+      "heading remains stable",
+      "trajectory suggests final approach alignment",
+      "final approach alert is present"
+    ]
+  },
+  {
+    "id": "ex08",
+    "difficulty": "medium",
+    "scenario": "United taxi or rollout after landing at SFO",
+    "raw_input": {
+      "icao24": "1d2e3f",
+      "startTime": 1713307000,
+      "endTime": 1713307360,
+      "callsign": "UAL903 ",
+      "path": [
+        [
+          1713307000,
+          37.615,
+          -122.39,
+          6.0,
+          110.0,
+          true
+        ],
+        [
+          1713307120,
+          37.614,
+          -122.3865,
+          6.0,
+          95.0,
+          true
+        ],
+        [
+          1713307240,
+          37.613,
+          -122.383,
+          6.0,
+          80.0,
+          true
+        ],
+        [
+          1713307360,
+          37.6122,
+          -122.3795,
+          6.0,
+          65.0,
+          true
+        ]
+      ],
+      "derived_metadata": {
+        "alert": "on_ground",
+        "notes": "surface movement after landing"
+      }
+    },
+    "gold_summary": "UAL903 is on the ground and appears to be taxiing after landing, with negligible altitude change and gradual heading adjustments.",
+    "gold_facts": [
+      "aircraft is on the ground",
+      "altitude stays near zero",
+      "movement continues on the surface",
+      "heading changes while taxiing",
+      "on-ground alert is present"
+    ]
+  },
+  {
+    "id": "ex09",
+    "difficulty": "hard",
+    "scenario": "American aircraft with unstable altitude profile over the East Bay",
+    "raw_input": {
+      "icao24": "2f3a4b",
+      "startTime": 1713308000,
+      "endTime": 1713308480,
+      "callsign": "AAL560 ",
+      "path": [
+        [
+          1713308000,
+          37.95,
+          -122.25,
+          2550.0,
+          118.0,
+          false
+        ],
+        [
+          1713308120,
+          37.92,
+          -122.18,
+          2875.0,
+          120.0,
+          false
+        ],
+        [
+          1713308240,
+          37.89,
+          -122.105,
+          2420.0,
+          124.0,
+          false
+        ],
+        [
+          1713308360,
+          37.855,
+          -122.025,
+          2760.0,
+          128.0,
+          false
+        ],
+        [
+          1713308480,
+          37.82,
+          -121.945,
+          2230.0,
+          132.0,
+          false
+        ]
+      ],
+      "derived_metadata": {
+        "alert": "unstable_profile",
+        "notes": "alternating climbs and descents on a generally east-southeast path"
+      }
+    },
+    "gold_summary": "AAL560 shows an unstable altitude profile, alternating between climbs and descents while continuing generally east-southeast.",
+    "gold_facts": [
+      "aircraft is airborne",
+      "altitude does not follow a single monotonic trend",
+      "there are alternating climbs and descents",
+      "heading changes are modest",
+      "unstable profile alert is present"
+    ]
+  },
+  {
+    "id": "ex10",
+    "difficulty": "hard",
+    "scenario": "Delta aircraft near level at first then entering abrupt descent south of Monterey Bay",
+    "raw_input": {
+      "icao24": "3c4d5e",
+      "startTime": 1713309000,
+      "endTime": 1713309480,
+      "callsign": "DAL155 ",
+      "path": [
+        [
+          1713309000,
+          36.55,
+          -121.9,
+          5400.0,
+          92.0,
+          false
+        ],
+        [
+          1713309120,
+          36.552,
+          -121.81,
+          5390.0,
+          93.0,
+          false
+        ],
+        [
+          1713309240,
+          36.553,
+          -121.72,
+          5385.0,
+          95.0,
+          false
+        ],
+        [
+          1713309360,
+          36.525,
+          -121.64,
+          4450.0,
+          98.0,
+          false
+        ],
+        [
+          1713309480,
+          36.49,
+          -121.56,
+          3180.0,
+          102.0,
+          false
+        ]
+      ],
+      "derived_metadata": {
+        "alert": "abrupt_descent",
+        "notes": "stable segment followed by sharp drop in altitude"
+      }
+    },
+    "gold_summary": "DAL155 remains nearly level at first and then enters an abrupt descent while continuing generally eastward.",
+    "gold_facts": [
+      "aircraft is airborne",
+      "initial segment is near level",
+      "later segment shows a sharp descent",
+      "heading remains generally east",
+      "abrupt descent alert is present"
+    ]
+  }
+]

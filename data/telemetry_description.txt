@@ -1,0 +1,10 @@
+1.	steady climb after departure
+2.	rapid descent on approach
+3.	level cruise with small heading changes
+4.	right turn during descent
+5.	left turn during climb
+6.	holding-pattern-like circular heading changes
+7.	final approach with descending altitude and decreasing track changes
+8.	taxi/on-ground movement at end
+9.	unstable segment with alternating altitude changes
+10.	near-level flight followed by abrupt descent
